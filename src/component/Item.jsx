@@ -1,16 +1,14 @@
 import Button from "@restart/ui/esm/Button"
 import React from "react"
-
+import ItemCounted from "./ItemCount"
+const carrito =(total) =>{
+    alert(`La cantidad que agregaste es de ${total} PROductos`)
+}
 
 const Item = ({prod})=>{
-    // aca se reciben las porps
     return( 
-        // renderizar ñps datos q lleguen por porpS
-        // renderizo el id
-        // renderi<o el user
-        // renderizo el mail
-        // renderizo la ciudad
-        <div className="card w-25 mt-5" >
+        
+        <div className="card w-22 mt-1" >
         <div className="card-header">
             {`${prod.name} - ${prod.categoria}`}
         </div>
@@ -27,7 +25,7 @@ const Item = ({prod})=>{
                 </button>
             </Button>
         </div>
-
+        <ItemCounted initial={1} stock={8} onAdd={carrito}/>
     </div>
     )
 }

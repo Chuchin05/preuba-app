@@ -22,7 +22,6 @@ const ItemCounted =({initial, stock ,onAdd})=>{
                   <Button variant="warning" onClick={disminuirCount} disabled ={count < 1}>-</Button>
                   <FormControl className="Text-center" aria-label="Example text with two button addons" value={count}/>
                   <Button variant="warning" onClick={aumentarCount}>+</Button>
-                  <hr />
                   <Button variant="primary" onClick={()=>onAdd(count)}>Agreagar al carrito</Button> 
                   
                 </>

@@ -1,5 +1,5 @@
 import { Container,Row,Col,Image } from "react-bootstrap"
-
+import React from "react"
 const CartWidget =()=>{
     return (
         <Container>

@@ -1,3 +1,4 @@
+import React from "react"
 import ItemCounted from "./ItemCount"
 import { useState } from "react"
 import ItemList from "./ItemList"
@@ -55,7 +56,7 @@ const ItemListContainer= ()=>{
         <div>
             {/* <h1>{dataUsers}</h1> */}
             <ItemList product={product}/>
-            <ItemCounted stock={8} initial={1} onAdd={carrito} />
+            {/* <ItemCounted stock={8} initial={1} onAdd={carrito} /> */}
         </div>
     )
 }

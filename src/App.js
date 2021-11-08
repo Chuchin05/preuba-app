@@ -3,8 +3,9 @@ import { Container } from 'reactstrap';
 import './App.css';
 import ItemListContainer from './component/ItemListContainer';
 import NavBar from './component/NavBar';
-
-
+import React from 'react';
+import { ItemDetailContainer } from './component/ItemDetailContainer';
+import "bootstrap/dist/css/bootstrap.min.css";
  
 
 
@@ -15,6 +16,7 @@ function App() {
     <div className="App">
       <NavBar/>
       <ItemListContainer/>
+      <ItemDetailContainer/>
       </div>
 
     
